@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store | ParthXMods</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -59,8 +62,13 @@
         }
 
         @keyframes moveStars {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(-60px, -60px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-60px, -60px);
+            }
         }
 
         /* Navigation */
@@ -176,8 +184,13 @@
         }
 
         @keyframes glow {
-            from { text-shadow: 0 0 20px rgba(0, 255, 136, 0.5); }
-            to { text-shadow: 0 0 30px rgba(0, 255, 136, 0.8); }
+            from {
+                text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+            }
+
+            to {
+                text-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+            }
         }
 
         /* Filter Section */
@@ -461,6 +474,7 @@
                 opacity: 0;
                 transform: translateY(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -536,10 +550,12 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
-                /* Cart Styles */
+        /* Cart Styles */
         .cart-icon {
             position: relative;
             display: flex;
@@ -846,8 +862,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
         }
 
         /* Theme Toggle */
@@ -940,7 +963,7 @@
                 padding: 0.5rem;
             }
 
-            .checkout-team-profiles > div {
+            .checkout-team-profiles>div {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
@@ -957,6 +980,7 @@
             .checkout-profile-pic i {
                 font-size: 1.5rem;
             }
+
             nav {
                 padding: 1rem 3%;
             }
@@ -1073,6 +1097,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="bg-animation"></div>
 
@@ -1081,8 +1106,8 @@
             <div class="logo">ParthXMods</div>
             <ul class="nav-links">
                 <li><a href="javascript:history.back()" class="back-btn">
-                    <i class="fas fa-arrow-left"></i> Go Back
-                </a></li>
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="free.html">Free Mods</a></li>
                 <li><a href="store.html" class="active">Store</a></li>
@@ -1096,7 +1121,7 @@
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
-             <button class="theme-toggle" onclick="toggleTheme()">
+            <button class="theme-toggle" onclick="toggleTheme()">
                 <i class="fas fa-sun"></i> Premium
             </button>
         </div>
@@ -1132,7 +1157,8 @@
 
     <section class="store-header">
         <h1 class="store-title">Premium Mod Store</h1>
-        <p class="store-subtitle">Discover our collection of premium cricket mods with cutting-edge features and unmatched quality.</p>
+        <p class="store-subtitle">Discover our collection of premium cricket mods with cutting-edge features and
+            unmatched quality.</p>
     </section>
 
     <section class="filters">
@@ -1196,7 +1222,7 @@
     </div>
 
     <script>
-         // Function to toggle theme
+        // Function to toggle theme
         function toggleTheme() {
             document.body.classList.toggle('white-theme');
         }
@@ -1215,98 +1241,9 @@
                 badge: "popular",
                 icon: "fas fa-cricket-ball"
             },
-            {
-                id: 2,
-                title: "Ultra Graphics Pack",
-                version: "v2.1.8",
-                price: 12.99,
-                category: "graphics",
-                description: "Transform your cricket game with ultra-realistic graphics and lighting effects.",
-                features: ["HDR Lighting", "4K Textures", "Weather Effects", "Dynamic Shadows"],
-                downloads: 8930,
-                rating: 4.7,
-                badge: "new",
-                icon: "fas fa-palette"
+           
             },
-            {
-                id: 3,
-                title: "Gameplay Master",
-                version: "v1.9.5",
-                price: 18.99,
-                category: "gameplay",
-                description: "Revolutionary gameplay mechanics with realistic ball physics and advanced controls.",
-                features: ["Real Physics", "Pro Controls", "Career Mode", "Multiplayer"],
-                downloads: 12050,
-                rating: 4.8,
-                badge: "premium",
-                icon: "fas fa-gamepad"
-            },
-            {
-                id: 4,
-                title: "Stadium Collection",
-                version: "v1.5.2",
-                price: 9.99,
-                category: "graphics",
-                description: "Pack of 50+ authentic cricket stadiums from around the world.",
-                features: ["50+ Stadiums", "HD Models", "Crowd Audio", "Weather System"],
-                downloads: 6730,
-                rating: 4.6,
-                badge: "new",
-                icon: "fas fa-building"
-            },
-            {
-                id: 5,
-                title: "UI Revolution",
-                version: "v2.0.3",
-                price: 7.99,
-                category: "ui",
-                description: "Modern and intuitive user interface with customizable themes.",
-                features: ["Modern UI", "10+ Themes", "Custom HUD", "Mobile Ready"],
-                downloads: 9840,
-                rating: 4.5,
-                badge: "popular",
-                icon: "fas fa-desktop"
-            },
-            {
-                id: 6,
-                title: "Legend Edition",
-                version: "v4.1.0",
-                price: 34.99,
-                category: "complete",
-                description: "The ultimate cricket mod package with everything you need for professional gaming.",
-                features: ["Everything Included", "Pro Features", "VIP Support", "Lifetime Updates"],
-                downloads: 3210,
-                rating: 5.0,
-                badge: "premium",
-                icon: "fas fa-trophy"
-            },
-            {
-                id: 7,
-                title: "Weather Master",
-                version: "v1.3.7",
-                price: 5.99,
-                category: "graphics",
-                description: "Dynamic weather system with realistic rain, fog, and lighting conditions.",
-                features: ["Real Weather", "Rain Effects", "Fog System", "Dynamic Sky"],
-                downloads: 4560,
-                rating: 4.4,
-                badge: "new",
-                icon: "fas fa-cloud-rain"
-            },
-            {
-                id: 8,
-                title: "Audio Enhancement",
-                version: "v2.2.1",
-                price: 8.99,
-                category: "gameplay",
-                description: "Immersive audio experience with 3D sound effects and commentary.",
-                features: ["3D Audio", "Live Commentary", "Crowd Sounds", "Surround Sound"],
-                downloads: 7230,
-                rating: 4.3,
-                badge: "popular",
-                icon: "fas fa-volume-up"
-            }
-        ];
+
 
         // DOM elements
         const modsGrid = document.getElementById('modsGrid');
@@ -1416,9 +1353,9 @@
                 else if (price === '10to25') priceMatch = mod.price >= 10 && mod.price <= 25;
                 else if (price === 'over25') priceMatch = mod.price > 25;
 
-                const searchMatch = mod.title.toLowerCase().includes(search) || 
-                                  mod.description.toLowerCase().includes(search) ||
-                                  mod.features.some(feature => feature.toLowerCase().includes(search));
+                const searchMatch = mod.title.toLowerCase().includes(search) ||
+                    mod.description.toLowerCase().includes(search) ||
+                    mod.features.some(feature => feature.toLowerCase().includes(search));
 
                 return categoryMatch && priceMatch && searchMatch;
             });
@@ -1722,7 +1659,9 @@
                     transform: translateY(0);
                 }
             }
+        `;
         document.head.appendChild(style);
     </script>
 </body>
-</html> in
+
+</html>
